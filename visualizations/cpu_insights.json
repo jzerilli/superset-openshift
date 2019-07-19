@@ -1,0 +1,1707 @@
+{
+    "dashboards": [
+        {
+            "__Dashboard__": {
+                "changed_on": {
+                    "__datetime__": "2019-07-16T14:40:10"
+                },
+                "created_by_fk": 1,
+                "css": "",
+                "position_json": "{\"CHART-1ZYwqJh_G4\":{\"children\":[],\"id\":\"CHART-1ZYwqJh_G4\",\"meta\":{\"chartId\":103,\"height\":50,\"sliceName\":\"CPU Speed Distribution\",\"width\":6},\"type\":\"CHART\"},\"CHART-24p08DHCBb\":{\"children\":[],\"id\":\"CHART-24p08DHCBb\",\"meta\":{\"chartId\":99,\"height\":71,\"sliceName\":\"Average CPU Speeds\",\"width\":12},\"type\":\"CHART\"},\"CHART-2BShs5zcx0\":{\"children\":[],\"id\":\"CHART-2BShs5zcx0\",\"meta\":{\"chartId\":104,\"height\":49,\"sliceName\":\"CPU Count Distribution\",\"width\":6},\"type\":\"CHART\"},\"CHART-CJd7FR0F-W\":{\"children\":[],\"id\":\"CHART-CJd7FR0F-W\",\"meta\":{\"chartId\":147,\"height\":16,\"sliceName\":\"CPU Speed Summary\",\"width\":6},\"type\":\"CHART\"},\"CHART-KIXCcNmRx8\":{\"children\":[],\"id\":\"CHART-KIXCcNmRx8\",\"meta\":{\"chartId\":148,\"height\":15,\"sliceName\":\"CPU Count Summary\",\"width\":6},\"type\":\"CHART\"},\"CHART-TxTuFZOJbr\":{\"children\":[],\"id\":\"CHART-TxTuFZOJbr\",\"meta\":{\"chartId\":106,\"height\":49,\"sliceName\":\"Core Distribution\",\"width\":6},\"type\":\"CHART\"},\"CHART-d5IGfu20Du\":{\"children\":[],\"id\":\"CHART-d5IGfu20Du\",\"meta\":{\"chartId\":98,\"height\":46,\"sliceName\":\"Cache Sizes\",\"width\":12},\"type\":\"CHART\"},\"CHART-lOm04rpRdq\":{\"children\":[],\"id\":\"CHART-lOm04rpRdq\",\"meta\":{\"chartId\":149,\"height\":15,\"sliceName\":\"Core Total Summary\",\"width\":6},\"type\":\"CHART\"},\"CHART-sL9E_WiZh0\":{\"children\":[],\"id\":\"CHART-sL9E_WiZh0\",\"meta\":{\"chartId\":102,\"height\":45,\"sliceName\":\"Cache Size Distribution\",\"width\":6},\"type\":\"CHART\"},\"CHART-zUO_8uRiF_\":{\"children\":[],\"id\":\"CHART-zUO_8uRiF_\",\"meta\":{\"chartId\":146,\"height\":15,\"sliceName\":\"Cache Size Summary\",\"width\":6},\"type\":\"CHART\"},\"DASHBOARD_VERSION_KEY\":\"v2\",\"GRID_ID\":{\"children\":[\"ROW-97iT7WxSe\",\"ROW-Qy3qxJgvM\",\"ROW-Ag7oTLsAv\",\"ROW-eHfx7ulFG\",\"ROW-JxIl0ifg4\",\"ROW-BMfkX3iOz\"],\"id\":\"GRID_ID\",\"type\":\"GRID\"},\"HEADER_ID\":{\"id\":\"HEADER_ID\",\"meta\":{\"text\":\"CPU Insights\"},\"type\":\"HEADER\"},\"ROOT_ID\":{\"children\":[\"GRID_ID\"],\"id\":\"ROOT_ID\",\"type\":\"ROOT\"},\"ROW-97iT7WxSe\":{\"children\":[\"CHART-zUO_8uRiF_\",\"CHART-sL9E_WiZh0\"],\"id\":\"ROW-97iT7WxSe\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"type\":\"ROW\"},\"ROW-Ag7oTLsAv\":{\"children\":[\"CHART-KIXCcNmRx8\",\"CHART-2BShs5zcx0\"],\"id\":\"ROW-Ag7oTLsAv\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"type\":\"ROW\"},\"ROW-BMfkX3iOz\":{\"children\":[\"CHART-24p08DHCBb\"],\"id\":\"ROW-BMfkX3iOz\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"type\":\"ROW\"},\"ROW-JxIl0ifg4\":{\"children\":[\"CHART-d5IGfu20Du\"],\"id\":\"ROW-JxIl0ifg4\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"type\":\"ROW\"},\"ROW-Qy3qxJgvM\":{\"children\":[\"CHART-CJd7FR0F-W\",\"CHART-1ZYwqJh_G4\"],\"id\":\"ROW-Qy3qxJgvM\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"type\":\"ROW\"},\"ROW-eHfx7ulFG\":{\"children\":[\"CHART-lOm04rpRdq\",\"CHART-TxTuFZOJbr\"],\"id\":\"ROW-eHfx7ulFG\",\"meta\":{\"background\":\"BACKGROUND_TRANSPARENT\"},\"type\":\"ROW\"}}",
+                "id": 10,
+                "created_on": {
+                    "__datetime__": "2019-06-24T12:44:06"
+                },
+                "slug": null,
+                "changed_by_fk": 1,
+                "json_metadata": "{\"filter_immune_slices\": [], \"timed_refresh_immune_slices\": [], \"filter_immune_slice_fields\": {}, \"expanded_slices\": {}, \"default_filters\": \"{}\", \"remote_id\": 10}",
+                "description": null,
+                "dashboard_title": "CPU Insights",
+                "slices": [
+                    {
+                        "__Slice__": {
+                            "changed_by_fk": 1,
+                            "perm": "[Local Thrift Server].[cpu_data](id:29)",
+                            "description": null,
+                            "viz_type": "partition",
+                            "datasource_name": "cpu_data",
+                            "datasource_id": 29,
+                            "id": 98,
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:54:27"
+                            },
+                            "created_by_fk": 1,
+                            "cache_timeout": null,
+                            "params": "{\"datasource\": \"29__table\", \"viz_type\": \"partition\", \"slice_id\": 98, \"url_params\": {}, \"granularity_sqla\": \"upload_time\", \"time_grain_sqla\": \"P1D\", \"time_range\": \"No filter\", \"metrics\": [{\"expressionType\": \"SIMPLE\", \"column\": {\"id\": 780, \"column_name\": \"cache_size\", \"verbose_name\": null, \"description\": null, \"expression\": \"\", \"filterable\": false, \"groupby\": false, \"is_dttm\": false, \"type\": \"BIGINT\", \"database_expression\": null, \"python_date_format\": null, \"optionName\": \"_col_cache_size\"}, \"aggregate\": \"AVG\", \"sqlExpression\": null, \"hasCustomLabel\": false, \"fromFormData\": true, \"label\": \"AVG(cache_size)\", \"optionName\": \"metric_zs7le0lzqh_3odt5jut4qk\"}], \"adhoc_filters\": [{\"expressionType\": \"SIMPLE\", \"subject\": \"cache_size\", \"operator\": \"!=\", \"comparator\": \"0\", \"clause\": \"WHERE\", \"sqlExpression\": null, \"fromFormData\": true, \"filterOptionName\": \"filter_g6z92q08w1g_nv4ejy3ltvm\"}], \"groupby\": [\"model_name\"], \"timeseries_limit_metric\": null, \"order_desc\": true, \"contribution\": false, \"row_limit\": 10000, \"time_series_option\": \"not_time\", \"color_scheme\": \"d3Category10\", \"number_format\": \".3s\", \"date_time_format\": \"smart_date\", \"partition_limit\": 10, \"partition_threshold\": \"0.05\", \"log_scale\": false, \"equal_date_size\": true, \"rich_tooltip\": true, \"rolling_type\": \"None\", \"comparison_type\": \"values\", \"resample_how\": null, \"resample_rule\": null, \"resample_fillmethod\": null, \"remote_id\": 98, \"datasource_name\": \"cpu_data\", \"schema\": \"cpu_data\", \"database_name\": \"Local Thrift Server\"}",
+                            "datasource_type": "table",
+                            "slice_name": "Cache Sizes",
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:40:52"
+                            }
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "changed_by_fk": 1,
+                            "perm": "[Local Thrift Server].[cpu_data](id:29)",
+                            "description": null,
+                            "viz_type": "dist_bar",
+                            "datasource_name": "cpu_data",
+                            "datasource_id": 29,
+                            "id": 99,
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:56:36"
+                            },
+                            "created_by_fk": 1,
+                            "cache_timeout": null,
+                            "params": "{\"datasource\": \"29__table\", \"viz_type\": \"dist_bar\", \"url_params\": {}, \"granularity_sqla\": \"upload_time\", \"time_grain_sqla\": \"P1D\", \"time_range\": \"No filter\", \"metrics\": [{\"expressionType\": \"SIMPLE\", \"column\": {\"id\": 779, \"column_name\": \"cpu_speed\", \"verbose_name\": null, \"description\": null, \"expression\": \"\", \"filterable\": false, \"groupby\": false, \"is_dttm\": false, \"type\": \"FLOAT\", \"database_expression\": null, \"python_date_format\": null, \"optionName\": \"_col_cpu_speed\"}, \"aggregate\": \"AVG\", \"sqlExpression\": null, \"hasCustomLabel\": false, \"fromFormData\": true, \"label\": \"AVG(cpu_speed)\", \"optionName\": \"metric_xzd3mwcd8v_mf376mc4ug\"}], \"adhoc_filters\": [], \"groupby\": [\"model_name\"], \"columns\": [], \"row_limit\": 50000, \"contribution\": false, \"color_scheme\": \"bnbColors\", \"show_legend\": true, \"show_bar_value\": false, \"bar_stacked\": false, \"order_bars\": false, \"y_axis_format\": \".3s\", \"y_axis_label\": \"\", \"show_controls\": false, \"x_axis_label\": \"\", \"bottom_margin\": \"auto\", \"x_ticks_layout\": \"auto\", \"reduce_x_ticks\": false, \"remote_id\": 99, \"datasource_name\": \"cpu_data\", \"schema\": \"cpu_data\", \"database_name\": \"Local Thrift Server\"}",
+                            "datasource_type": "table",
+                            "slice_name": "Average CPU Speeds",
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:40:52"
+                            }
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "changed_by_fk": 1,
+                            "perm": "[Local Thrift Server].[cpu_data](id:29)",
+                            "description": null,
+                            "viz_type": "histogram",
+                            "datasource_name": "cpu_data",
+                            "datasource_id": 29,
+                            "id": 102,
+                            "created_on": {
+                                "__datetime__": "2019-06-24T15:28:57"
+                            },
+                            "created_by_fk": 1,
+                            "cache_timeout": null,
+                            "params": "{\"datasource\": \"29__table\", \"viz_type\": \"histogram\", \"slice_id\": 102, \"url_params\": {}, \"granularity_sqla\": \"upload_time\", \"time_grain_sqla\": \"PT1M\", \"time_range\": \"No filter\", \"all_columns_x\": [\"cache_size\"], \"adhoc_filters\": [], \"row_limit\": 10000, \"groupby\": [], \"color_scheme\": \"bnbColors\", \"link_length\": \"25\", \"x_axis_label\": \"Bytes\", \"y_axis_label\": \"\", \"global_opacity\": 1, \"normalized\": false, \"remote_id\": 102, \"datasource_name\": \"cpu_data\", \"schema\": \"cpu_data\", \"database_name\": \"Local Thrift Server\"}",
+                            "datasource_type": "table",
+                            "slice_name": "Cache Size Distribution",
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:40:52"
+                            }
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "changed_by_fk": 1,
+                            "perm": "[Local Thrift Server].[cpu_data](id:29)",
+                            "description": null,
+                            "viz_type": "histogram",
+                            "datasource_name": "cpu_data",
+                            "datasource_id": 29,
+                            "id": 103,
+                            "created_on": {
+                                "__datetime__": "2019-06-24T15:41:49"
+                            },
+                            "created_by_fk": 1,
+                            "cache_timeout": null,
+                            "params": "{\"datasource\": \"29__table\", \"viz_type\": \"histogram\", \"slice_id\": 103, \"url_params\": {}, \"granularity_sqla\": \"upload_time\", \"time_grain_sqla\": \"P1D\", \"time_range\": \"No filter\", \"all_columns_x\": [\"cpu_speed\"], \"adhoc_filters\": [], \"row_limit\": 10000, \"groupby\": [], \"color_scheme\": \"googleCategory20c\", \"link_length\": \"25\", \"x_axis_label\": \"Cycles Per Minute\", \"y_axis_label\": \"\", \"global_opacity\": 1, \"normalized\": false, \"remote_id\": 103, \"datasource_name\": \"cpu_data\", \"schema\": \"cpu_data\", \"database_name\": \"Local Thrift Server\"}",
+                            "datasource_type": "table",
+                            "slice_name": "CPU Speed Distribution",
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:40:52"
+                            }
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "changed_by_fk": 1,
+                            "perm": "[Local Thrift Server].[cpu_data](id:29)",
+                            "description": null,
+                            "viz_type": "histogram",
+                            "datasource_name": "cpu_data",
+                            "datasource_id": 29,
+                            "id": 104,
+                            "created_on": {
+                                "__datetime__": "2019-06-24T15:43:43"
+                            },
+                            "created_by_fk": 1,
+                            "cache_timeout": null,
+                            "params": "{\"datasource\": \"29__table\", \"viz_type\": \"histogram\", \"url_params\": {}, \"granularity_sqla\": \"upload_time\", \"time_grain_sqla\": \"P1D\", \"time_range\": \"No filter\", \"all_columns_x\": [\"cpu_count\"], \"adhoc_filters\": [], \"row_limit\": 10000, \"groupby\": [], \"color_scheme\": \"d3Category20b\", \"link_length\": \"25\", \"x_axis_label\": \"\", \"y_axis_label\": \"\", \"global_opacity\": 1, \"normalized\": false, \"remote_id\": 104, \"datasource_name\": \"cpu_data\", \"schema\": \"cpu_data\", \"database_name\": \"Local Thrift Server\"}",
+                            "datasource_type": "table",
+                            "slice_name": "CPU Count Distribution",
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:40:52"
+                            }
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "changed_by_fk": 1,
+                            "perm": "[Local Thrift Server].[cpu_data](id:29)",
+                            "description": null,
+                            "viz_type": "histogram",
+                            "datasource_name": "cpu_data",
+                            "datasource_id": 29,
+                            "id": 106,
+                            "created_on": {
+                                "__datetime__": "2019-06-24T16:16:39"
+                            },
+                            "created_by_fk": 1,
+                            "cache_timeout": null,
+                            "params": "{\"datasource\": \"29__table\", \"viz_type\": \"histogram\", \"url_params\": {}, \"granularity_sqla\": \"upload_time\", \"time_grain_sqla\": \"P1D\", \"time_range\": \"No filter\", \"all_columns_x\": [\"core_total\"], \"adhoc_filters\": [], \"row_limit\": 1000, \"groupby\": [], \"color_scheme\": \"bnbColors\", \"link_length\": \"25\", \"x_axis_label\": \"\", \"y_axis_label\": \"\", \"global_opacity\": 1, \"normalized\": false, \"remote_id\": 106, \"datasource_name\": \"cpu_data\", \"schema\": \"cpu_data\", \"database_name\": \"Local Thrift Server\"}",
+                            "datasource_type": "table",
+                            "slice_name": "Core Distribution",
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:40:52"
+                            }
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "changed_by_fk": 1,
+                            "perm": "[None].[Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-j_YxcxfwD](id:47)",
+                            "description": null,
+                            "viz_type": "table",
+                            "datasource_name": "Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-j_YxcxfwD",
+                            "datasource_id": 47,
+                            "id": 146,
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:01:01"
+                            },
+                            "created_by_fk": 1,
+                            "cache_timeout": null,
+                            "params": "{\"datasource\": \"47__table\", \"viz_type\": \"table\", \"granularity_sqla\": null, \"time_grain_sqla\": \"P1D\", \"time_range\": \"100 years ago : \", \"groupby\": [], \"metrics\": [], \"percent_metrics\": [], \"timeseries_limit_metric\": null, \"row_limit\": 1000, \"include_time\": false, \"order_desc\": true, \"all_columns\": [\"COUNT\", \"AVERAGE\", \"MIN\", \"MAX\"], \"order_by_cols\": [], \"adhoc_filters\": [], \"table_timestamp_format\": \"%Y-%m-%d %H:%M:%S\", \"page_length\": 0, \"include_search\": false, \"table_filter\": false, \"align_pn\": false, \"color_pn\": true, \"remote_id\": 146, \"datasource_name\": \"Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-j_YxcxfwD\", \"schema\": \"Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-j_YxcxfwD\", \"database_name\": \"Local Thrift Server\"}",
+                            "datasource_type": "table",
+                            "slice_name": "Cache Size Summary",
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:40:52"
+                            }
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "changed_by_fk": 1,
+                            "perm": "[None].[Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-WY7LbSBFq](id:48)",
+                            "description": null,
+                            "viz_type": "table",
+                            "datasource_name": "Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-WY7LbSBFq",
+                            "datasource_id": 48,
+                            "id": 147,
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:03:38"
+                            },
+                            "created_by_fk": 1,
+                            "cache_timeout": null,
+                            "params": "{\"datasource\": \"48__table\", \"viz_type\": \"table\", \"granularity_sqla\": null, \"time_grain_sqla\": \"P1D\", \"time_range\": \"100 years ago : \", \"groupby\": [], \"metrics\": [], \"percent_metrics\": [], \"timeseries_limit_metric\": null, \"row_limit\": 1000, \"include_time\": false, \"order_desc\": true, \"all_columns\": [\"COUNT\", \"AVERAGE\", \"MIN\", \"MAX\"], \"order_by_cols\": [], \"adhoc_filters\": [], \"table_timestamp_format\": \"%Y-%m-%d %H:%M:%S\", \"page_length\": 0, \"include_search\": false, \"table_filter\": false, \"align_pn\": false, \"color_pn\": true, \"remote_id\": 147, \"datasource_name\": \"Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-WY7LbSBFq\", \"schema\": \"Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-WY7LbSBFq\", \"database_name\": \"Local Thrift Server\"}",
+                            "datasource_type": "table",
+                            "slice_name": "CPU Speed Summary",
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:40:52"
+                            }
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "changed_by_fk": 1,
+                            "perm": "[None].[Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-qG4Sbe6S5](id:50)",
+                            "description": null,
+                            "viz_type": "table",
+                            "datasource_name": "Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-qG4Sbe6S5",
+                            "datasource_id": 50,
+                            "id": 148,
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:05:43"
+                            },
+                            "created_by_fk": 1,
+                            "cache_timeout": null,
+                            "params": "{\"datasource\": \"50__table\", \"viz_type\": \"table\", \"granularity_sqla\": null, \"time_grain_sqla\": \"P1D\", \"time_range\": \"100 years ago : \", \"groupby\": [], \"metrics\": [], \"percent_metrics\": [], \"timeseries_limit_metric\": null, \"row_limit\": 1000, \"include_time\": false, \"order_desc\": true, \"all_columns\": [\"COUNT\", \"AVERAGE\", \"MIN\", \"MAX\"], \"order_by_cols\": [], \"adhoc_filters\": [], \"table_timestamp_format\": \"%Y-%m-%d %H:%M:%S\", \"page_length\": 0, \"include_search\": false, \"table_filter\": false, \"align_pn\": false, \"color_pn\": true, \"remote_id\": 148, \"datasource_name\": \"Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-qG4Sbe6S5\", \"schema\": \"Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-qG4Sbe6S5\", \"database_name\": \"Local Thrift Server\"}",
+                            "datasource_type": "table",
+                            "slice_name": "CPU Count Summary",
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:40:52"
+                            }
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "changed_by_fk": 1,
+                            "perm": "[None].[Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-uekbuM6OG](id:51)",
+                            "description": null,
+                            "viz_type": "table",
+                            "datasource_name": "Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-uekbuM6OG",
+                            "datasource_id": 51,
+                            "id": 149,
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:39:48"
+                            },
+                            "created_by_fk": 1,
+                            "cache_timeout": null,
+                            "params": "{\"datasource\": \"51__table\", \"viz_type\": \"table\", \"granularity_sqla\": null, \"time_grain_sqla\": \"P1D\", \"time_range\": \"100 years ago : \", \"groupby\": [], \"metrics\": [], \"percent_metrics\": [], \"timeseries_limit_metric\": null, \"row_limit\": 1000, \"include_time\": false, \"order_desc\": true, \"all_columns\": [\"COUNT\", \"AVERAGE\", \"MIN\", \"MAX\"], \"order_by_cols\": [], \"adhoc_filters\": [], \"table_timestamp_format\": \"%Y-%m-%d %H:%M:%S\", \"page_length\": 0, \"include_search\": false, \"table_filter\": false, \"align_pn\": false, \"color_pn\": true, \"remote_id\": 149, \"datasource_name\": \"Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-uekbuM6OG\", \"schema\": \"Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-uekbuM6OG\", \"database_name\": \"Local Thrift Server\"}",
+                            "datasource_type": "table",
+                            "slice_name": "Core Total Summary",
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:40:52"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "datasources": [
+        {
+            "__SqlaTable__": {
+                "created_on": {
+                    "__datetime__": "2019-07-16T14:00:30"
+                },
+                "schema": null,
+                "cache_timeout": null,
+                "changed_on": {
+                    "__datetime__": "2019-07-16T14:00:30"
+                },
+                "sql": "select COUNT(cache_size) as COUNT, AVG(cache_size) as AVERAGE, MIN(cache_size) as MIN, MAX(cache_size) as MAX \nfrom cpu_data",
+                "params": "{\"remote_id\": 47, \"database_name\": \"Local Thrift Server\"}",
+                "id": 47,
+                "is_sqllab_view": true,
+                "perm": "[None].[Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-j_YxcxfwD](id:47)",
+                "description": null,
+                "template_params": "{}",
+                "table_name": "Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-j_YxcxfwD",
+                "default_endpoint": null,
+                "created_by_fk": 1,
+                "main_dttm_col": null,
+                "is_featured": false,
+                "changed_by_fk": 1,
+                "database_id": 7,
+                "filter_select_enabled": false,
+                "fetch_values_predicate": null,
+                "offset": 0,
+                "user_id": null,
+                "database": {
+                    "__Database__": {
+                        "password": null,
+                        "allow_dml": true,
+                        "cache_timeout": null,
+                        "force_ctas_schema": "",
+                        "select_as_create_table_as": false,
+                        "created_on": {
+                            "__datetime__": "2019-06-17T14:33:07"
+                        },
+                        "allow_multi_schema_metadata_fetch": true,
+                        "expose_in_sqllab": true,
+                        "changed_on": {
+                            "__datetime__": "2019-07-16T13:50:07"
+                        },
+                        "extra": "{\r\n    \"metadata_params\": {},\r\n    \"engine_params\": {},\r\n    \"metadata_cache_timeout\": {},\r\n    \"schemas_allowed_for_csv_upload\": []\r\n}\r\n",
+                        "allow_run_sync": true,
+                        "id": 7,
+                        "perm": "[Local Thrift Server].(id:7)",
+                        "allow_run_async": false,
+                        "verbose_name": null,
+                        "impersonate_user": false,
+                        "allow_csv_upload": false,
+                        "database_name": "Local Thrift Server",
+                        "created_by_fk": 1,
+                        "allow_ctas": false,
+                        "sqlalchemy_uri": "hive://localhost:10000/default",
+                        "changed_by_fk": 1
+                    }
+                },
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:00:30"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "BIGINT_TYPE",
+                            "description": null,
+                            "groupby": true,
+                            "table_id": 47,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:00:30"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "id": 1053,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "COUNT",
+                            "database_expression": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:00:30"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "DOUBLE_TYPE",
+                            "description": null,
+                            "groupby": true,
+                            "table_id": 47,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:00:30"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "id": 1054,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "AVERAGE",
+                            "database_expression": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:00:30"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "BIGINT_TYPE",
+                            "description": null,
+                            "groupby": true,
+                            "table_id": 47,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:00:30"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "id": 1055,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "MIN",
+                            "database_expression": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:00:30"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "BIGINT_TYPE",
+                            "description": null,
+                            "groupby": true,
+                            "table_id": 47,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:00:30"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "id": 1056,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "MAX",
+                            "database_expression": null
+                        }
+                    }
+                ],
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "created_by_fk": 1,
+                            "table_id": 47,
+                            "d3format": null,
+                            "description": null,
+                            "metric_type": null,
+                            "metric_name": "count",
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:00:30"
+                            },
+                            "changed_by_fk": 1,
+                            "expression": "count(*)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "verbose_name": null,
+                            "id": 1607,
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:00:30"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "__SqlaTable__": {
+                "created_on": {
+                    "__datetime__": "2019-06-24T12:42:18"
+                },
+                "schema": "",
+                "cache_timeout": null,
+                "changed_on": {
+                    "__datetime__": "2019-07-08T11:28:41"
+                },
+                "sql": "",
+                "params": "{\"remote_id\": 29, \"database_name\": \"Local Thrift Server\"}",
+                "id": 29,
+                "is_sqllab_view": false,
+                "perm": "[Local Thrift Server].[cpu_data](id:29)",
+                "description": "",
+                "template_params": "",
+                "table_name": "cpu_data",
+                "default_endpoint": "",
+                "created_by_fk": 1,
+                "main_dttm_col": "upload_time",
+                "is_featured": false,
+                "changed_by_fk": 1,
+                "database_id": 7,
+                "filter_select_enabled": false,
+                "fetch_values_predicate": "",
+                "offset": 0,
+                "user_id": null,
+                "database": {
+                    "__Database__": {
+                        "password": null,
+                        "allow_dml": true,
+                        "cache_timeout": null,
+                        "force_ctas_schema": "",
+                        "select_as_create_table_as": false,
+                        "created_on": {
+                            "__datetime__": "2019-06-17T14:33:07"
+                        },
+                        "allow_multi_schema_metadata_fetch": true,
+                        "expose_in_sqllab": true,
+                        "changed_on": {
+                            "__datetime__": "2019-07-16T13:50:07"
+                        },
+                        "extra": "{\r\n    \"metadata_params\": {},\r\n    \"engine_params\": {},\r\n    \"metadata_cache_timeout\": {},\r\n    \"schemas_allowed_for_csv_upload\": []\r\n}\r\n",
+                        "allow_run_sync": true,
+                        "id": 7,
+                        "perm": "[Local Thrift Server].(id:7)",
+                        "allow_run_async": false,
+                        "verbose_name": null,
+                        "impersonate_user": false,
+                        "allow_csv_upload": false,
+                        "database_name": "Local Thrift Server",
+                        "created_by_fk": 1,
+                        "allow_ctas": false,
+                        "sqlalchemy_uri": "hive://localhost:10000/default",
+                        "changed_by_fk": 1
+                    }
+                },
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": false,
+                            "type": "TIMESTAMP",
+                            "description": null,
+                            "groupby": false,
+                            "table_id": 29,
+                            "count_distinct": false,
+                            "is_dttm": true,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "id": 778,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "upload_time",
+                            "database_expression": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": false,
+                            "type": "FLOAT",
+                            "description": null,
+                            "groupby": false,
+                            "table_id": 29,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": true,
+                            "changed_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "expression": "",
+                            "avg": true,
+                            "id": 779,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "cpu_speed",
+                            "database_expression": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": false,
+                            "type": "BIGINT",
+                            "description": null,
+                            "groupby": false,
+                            "table_id": 29,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": true,
+                            "changed_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "expression": "",
+                            "avg": true,
+                            "id": 780,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "cache_size",
+                            "database_expression": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": false,
+                            "type": "INT",
+                            "description": null,
+                            "groupby": false,
+                            "table_id": 29,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": true,
+                            "changed_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "expression": "",
+                            "avg": true,
+                            "id": 781,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "cpu_count",
+                            "database_expression": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": false,
+                            "type": "INT",
+                            "description": null,
+                            "groupby": false,
+                            "table_id": 29,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": true,
+                            "changed_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "expression": "",
+                            "avg": true,
+                            "id": 782,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "core_total",
+                            "database_expression": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": false,
+                            "type": "INT",
+                            "description": null,
+                            "groupby": false,
+                            "table_id": 29,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": true,
+                            "changed_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "expression": "",
+                            "avg": true,
+                            "id": 783,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "socket_count",
+                            "database_expression": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "STRING",
+                            "description": null,
+                            "groupby": true,
+                            "table_id": 29,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "id": 784,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "model_name",
+                            "database_expression": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "STRING",
+                            "description": null,
+                            "groupby": true,
+                            "table_id": 29,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "id": 785,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "model_number",
+                            "database_expression": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "STRING",
+                            "description": null,
+                            "groupby": true,
+                            "table_id": 29,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "id": 786,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "vendor",
+                            "database_expression": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "STRING",
+                            "description": null,
+                            "groupby": true,
+                            "table_id": 29,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "id": 787,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "system_id",
+                            "database_expression": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "STRING",
+                            "description": null,
+                            "groupby": true,
+                            "table_id": 29,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "id": 788,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "account",
+                            "database_expression": null
+                        }
+                    }
+                ],
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "created_by_fk": 1,
+                            "table_id": 29,
+                            "d3format": null,
+                            "description": null,
+                            "metric_type": "sum",
+                            "metric_name": "sum__cpu_speed",
+                            "changed_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "changed_by_fk": 1,
+                            "expression": "SUM(cpu_speed)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "verbose_name": null,
+                            "id": 1301,
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            }
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "created_by_fk": 1,
+                            "table_id": 29,
+                            "d3format": null,
+                            "description": null,
+                            "metric_type": "avg",
+                            "metric_name": "avg__cpu_speed",
+                            "changed_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "changed_by_fk": 1,
+                            "expression": "AVG(cpu_speed)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "verbose_name": null,
+                            "id": 1302,
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            }
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "created_by_fk": 1,
+                            "table_id": 29,
+                            "d3format": null,
+                            "description": null,
+                            "metric_type": "sum",
+                            "metric_name": "sum__cache_size",
+                            "changed_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "changed_by_fk": 1,
+                            "expression": "SUM(cache_size)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "verbose_name": null,
+                            "id": 1303,
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            }
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "created_by_fk": 1,
+                            "table_id": 29,
+                            "d3format": null,
+                            "description": null,
+                            "metric_type": "avg",
+                            "metric_name": "avg__cache_size",
+                            "changed_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "changed_by_fk": 1,
+                            "expression": "AVG(cache_size)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "verbose_name": null,
+                            "id": 1304,
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            }
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "created_by_fk": 1,
+                            "table_id": 29,
+                            "d3format": null,
+                            "description": null,
+                            "metric_type": "sum",
+                            "metric_name": "sum__cpu_count",
+                            "changed_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "changed_by_fk": 1,
+                            "expression": "SUM(cpu_count)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "verbose_name": null,
+                            "id": 1305,
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            }
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "created_by_fk": 1,
+                            "table_id": 29,
+                            "d3format": null,
+                            "description": null,
+                            "metric_type": "avg",
+                            "metric_name": "avg__cpu_count",
+                            "changed_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "changed_by_fk": 1,
+                            "expression": "AVG(cpu_count)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "verbose_name": null,
+                            "id": 1306,
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            }
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "created_by_fk": 1,
+                            "table_id": 29,
+                            "d3format": null,
+                            "description": null,
+                            "metric_type": "sum",
+                            "metric_name": "sum__core_total",
+                            "changed_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "changed_by_fk": 1,
+                            "expression": "SUM(core_total)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "verbose_name": null,
+                            "id": 1307,
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            }
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "created_by_fk": 1,
+                            "table_id": 29,
+                            "d3format": null,
+                            "description": null,
+                            "metric_type": "avg",
+                            "metric_name": "avg__core_total",
+                            "changed_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "changed_by_fk": 1,
+                            "expression": "AVG(core_total)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "verbose_name": null,
+                            "id": 1308,
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            }
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "created_by_fk": 1,
+                            "table_id": 29,
+                            "d3format": null,
+                            "description": null,
+                            "metric_type": "sum",
+                            "metric_name": "sum__socket_count",
+                            "changed_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "changed_by_fk": 1,
+                            "expression": "SUM(socket_count)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "verbose_name": null,
+                            "id": 1309,
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            }
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "created_by_fk": 1,
+                            "table_id": 29,
+                            "d3format": null,
+                            "description": null,
+                            "metric_type": "avg",
+                            "metric_name": "avg__socket_count",
+                            "changed_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "changed_by_fk": 1,
+                            "expression": "AVG(socket_count)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "verbose_name": null,
+                            "id": 1310,
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            }
+                        }
+                    },
+                    {
+                        "__SqlMetric__": {
+                            "created_by_fk": 1,
+                            "table_id": 29,
+                            "d3format": null,
+                            "description": null,
+                            "metric_type": "count",
+                            "metric_name": "count",
+                            "changed_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            },
+                            "changed_by_fk": 1,
+                            "expression": "COUNT(*)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "verbose_name": "COUNT(*)",
+                            "id": 1311,
+                            "created_on": {
+                                "__datetime__": "2019-06-24T12:42:18"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "__SqlaTable__": {
+                "created_on": {
+                    "__datetime__": "2019-07-16T14:03:21"
+                },
+                "schema": null,
+                "cache_timeout": null,
+                "changed_on": {
+                    "__datetime__": "2019-07-16T14:03:21"
+                },
+                "sql": "select COUNT(cpu_speed) as COUNT, AVG(cpu_speed) as AVERAGE, MIN(cpu_speed) as MIN, MAX(cpu_speed) as MAX \nfrom cpu_data",
+                "params": "{\"remote_id\": 48, \"database_name\": \"Local Thrift Server\"}",
+                "id": 48,
+                "is_sqllab_view": true,
+                "perm": "[None].[Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-WY7LbSBFq](id:48)",
+                "description": null,
+                "template_params": "{}",
+                "table_name": "Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-WY7LbSBFq",
+                "default_endpoint": null,
+                "created_by_fk": 1,
+                "main_dttm_col": null,
+                "is_featured": false,
+                "changed_by_fk": 1,
+                "database_id": 7,
+                "filter_select_enabled": false,
+                "fetch_values_predicate": null,
+                "offset": 0,
+                "user_id": null,
+                "database": {
+                    "__Database__": {
+                        "password": null,
+                        "allow_dml": true,
+                        "cache_timeout": null,
+                        "force_ctas_schema": "",
+                        "select_as_create_table_as": false,
+                        "created_on": {
+                            "__datetime__": "2019-06-17T14:33:07"
+                        },
+                        "allow_multi_schema_metadata_fetch": true,
+                        "expose_in_sqllab": true,
+                        "changed_on": {
+                            "__datetime__": "2019-07-16T13:50:07"
+                        },
+                        "extra": "{\r\n    \"metadata_params\": {},\r\n    \"engine_params\": {},\r\n    \"metadata_cache_timeout\": {},\r\n    \"schemas_allowed_for_csv_upload\": []\r\n}\r\n",
+                        "allow_run_sync": true,
+                        "id": 7,
+                        "perm": "[Local Thrift Server].(id:7)",
+                        "allow_run_async": false,
+                        "verbose_name": null,
+                        "impersonate_user": false,
+                        "allow_csv_upload": false,
+                        "database_name": "Local Thrift Server",
+                        "created_by_fk": 1,
+                        "allow_ctas": false,
+                        "sqlalchemy_uri": "hive://localhost:10000/default",
+                        "changed_by_fk": 1
+                    }
+                },
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:03:21"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "BIGINT_TYPE",
+                            "description": null,
+                            "groupby": true,
+                            "table_id": 48,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:03:21"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "id": 1057,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "COUNT",
+                            "database_expression": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:03:21"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "DOUBLE_TYPE",
+                            "description": null,
+                            "groupby": true,
+                            "table_id": 48,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:03:21"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "id": 1058,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "AVERAGE",
+                            "database_expression": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:03:21"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "FLOAT_TYPE",
+                            "description": null,
+                            "groupby": true,
+                            "table_id": 48,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:03:21"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "id": 1059,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "MIN",
+                            "database_expression": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:03:21"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "FLOAT_TYPE",
+                            "description": null,
+                            "groupby": true,
+                            "table_id": 48,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:03:21"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "id": 1060,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "MAX",
+                            "database_expression": null
+                        }
+                    }
+                ],
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "created_by_fk": 1,
+                            "table_id": 48,
+                            "d3format": null,
+                            "description": null,
+                            "metric_type": null,
+                            "metric_name": "count",
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:03:21"
+                            },
+                            "changed_by_fk": 1,
+                            "expression": "count(*)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "verbose_name": null,
+                            "id": 1608,
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:03:21"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "__SqlaTable__": {
+                "created_on": {
+                    "__datetime__": "2019-07-16T14:39:21"
+                },
+                "schema": null,
+                "cache_timeout": null,
+                "changed_on": {
+                    "__datetime__": "2019-07-16T14:39:21"
+                },
+                "sql": "select COUNT(core_total) as COUNT, AVG(core_total) as AVERAGE, MIN(core_total) as MIN, MAX(core_total) as MAX\nfrom cpu_data",
+                "params": "{\"remote_id\": 51, \"database_name\": \"Local Thrift Server\"}",
+                "id": 51,
+                "is_sqllab_view": true,
+                "perm": "[None].[Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-uekbuM6OG](id:51)",
+                "description": null,
+                "template_params": "{}",
+                "table_name": "Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-uekbuM6OG",
+                "default_endpoint": null,
+                "created_by_fk": 1,
+                "main_dttm_col": null,
+                "is_featured": false,
+                "changed_by_fk": 1,
+                "database_id": 7,
+                "filter_select_enabled": false,
+                "fetch_values_predicate": null,
+                "offset": 0,
+                "user_id": null,
+                "database": {
+                    "__Database__": {
+                        "password": null,
+                        "allow_dml": true,
+                        "cache_timeout": null,
+                        "force_ctas_schema": "",
+                        "select_as_create_table_as": false,
+                        "created_on": {
+                            "__datetime__": "2019-06-17T14:33:07"
+                        },
+                        "allow_multi_schema_metadata_fetch": true,
+                        "expose_in_sqllab": true,
+                        "changed_on": {
+                            "__datetime__": "2019-07-16T13:50:07"
+                        },
+                        "extra": "{\r\n    \"metadata_params\": {},\r\n    \"engine_params\": {},\r\n    \"metadata_cache_timeout\": {},\r\n    \"schemas_allowed_for_csv_upload\": []\r\n}\r\n",
+                        "allow_run_sync": true,
+                        "id": 7,
+                        "perm": "[Local Thrift Server].(id:7)",
+                        "allow_run_async": false,
+                        "verbose_name": null,
+                        "impersonate_user": false,
+                        "allow_csv_upload": false,
+                        "database_name": "Local Thrift Server",
+                        "created_by_fk": 1,
+                        "allow_ctas": false,
+                        "sqlalchemy_uri": "hive://localhost:10000/default",
+                        "changed_by_fk": 1
+                    }
+                },
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:39:21"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "BIGINT_TYPE",
+                            "description": null,
+                            "groupby": true,
+                            "table_id": 51,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:39:21"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "id": 1069,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "COUNT",
+                            "database_expression": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:39:21"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "DOUBLE_TYPE",
+                            "description": null,
+                            "groupby": true,
+                            "table_id": 51,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:39:21"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "id": 1070,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "AVERAGE",
+                            "database_expression": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:39:21"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "INT_TYPE",
+                            "description": null,
+                            "groupby": true,
+                            "table_id": 51,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:39:21"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "id": 1071,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "MIN",
+                            "database_expression": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:39:21"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "INT_TYPE",
+                            "description": null,
+                            "groupby": true,
+                            "table_id": 51,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:39:21"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "id": 1072,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "MAX",
+                            "database_expression": null
+                        }
+                    }
+                ],
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "created_by_fk": 1,
+                            "table_id": 51,
+                            "d3format": null,
+                            "description": null,
+                            "metric_type": null,
+                            "metric_name": "count",
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:39:21"
+                            },
+                            "changed_by_fk": 1,
+                            "expression": "count(*)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "verbose_name": null,
+                            "id": 1611,
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:39:21"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "__SqlaTable__": {
+                "created_on": {
+                    "__datetime__": "2019-07-16T14:05:25"
+                },
+                "schema": null,
+                "cache_timeout": null,
+                "changed_on": {
+                    "__datetime__": "2019-07-16T14:05:25"
+                },
+                "sql": "select COUNT(cpu_speed) as COUNT, AVG(cpu_speed) as AVERAGE, MIN(cpu_speed) as MIN, MAX(cpu_speed) as MAX \nfrom cpu_data",
+                "params": "{\"remote_id\": 50, \"database_name\": \"Local Thrift Server\"}",
+                "id": 50,
+                "is_sqllab_view": true,
+                "perm": "[None].[Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-qG4Sbe6S5](id:50)",
+                "description": null,
+                "template_params": "{}",
+                "table_name": "Jack Zerilli-Query Jack Zerilli-Untitled Query-DUW2xYN_k-qG4Sbe6S5",
+                "default_endpoint": null,
+                "created_by_fk": 1,
+                "main_dttm_col": null,
+                "is_featured": false,
+                "changed_by_fk": 1,
+                "database_id": 7,
+                "filter_select_enabled": false,
+                "fetch_values_predicate": null,
+                "offset": 0,
+                "user_id": null,
+                "database": {
+                    "__Database__": {
+                        "password": null,
+                        "allow_dml": true,
+                        "cache_timeout": null,
+                        "force_ctas_schema": "",
+                        "select_as_create_table_as": false,
+                        "created_on": {
+                            "__datetime__": "2019-06-17T14:33:07"
+                        },
+                        "allow_multi_schema_metadata_fetch": true,
+                        "expose_in_sqllab": true,
+                        "changed_on": {
+                            "__datetime__": "2019-07-16T13:50:07"
+                        },
+                        "extra": "{\r\n    \"metadata_params\": {},\r\n    \"engine_params\": {},\r\n    \"metadata_cache_timeout\": {},\r\n    \"schemas_allowed_for_csv_upload\": []\r\n}\r\n",
+                        "allow_run_sync": true,
+                        "id": 7,
+                        "perm": "[Local Thrift Server].(id:7)",
+                        "allow_run_async": false,
+                        "verbose_name": null,
+                        "impersonate_user": false,
+                        "allow_csv_upload": false,
+                        "database_name": "Local Thrift Server",
+                        "created_by_fk": 1,
+                        "allow_ctas": false,
+                        "sqlalchemy_uri": "hive://localhost:10000/default",
+                        "changed_by_fk": 1
+                    }
+                },
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:05:25"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "BIGINT_TYPE",
+                            "description": null,
+                            "groupby": true,
+                            "table_id": 50,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:05:25"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "id": 1065,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "COUNT",
+                            "database_expression": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:05:25"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "DOUBLE_TYPE",
+                            "description": null,
+                            "groupby": true,
+                            "table_id": 50,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:05:25"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "id": 1066,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "AVERAGE",
+                            "database_expression": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:05:25"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "FLOAT_TYPE",
+                            "description": null,
+                            "groupby": true,
+                            "table_id": 50,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:05:25"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "id": 1067,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "MIN",
+                            "database_expression": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:05:25"
+                            },
+                            "verbose_name": null,
+                            "created_by_fk": 1,
+                            "min": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "filterable": true,
+                            "type": "FLOAT_TYPE",
+                            "description": null,
+                            "groupby": true,
+                            "table_id": 50,
+                            "count_distinct": false,
+                            "is_dttm": false,
+                            "sum": false,
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:05:25"
+                            },
+                            "expression": "",
+                            "avg": false,
+                            "id": 1068,
+                            "python_date_format": null,
+                            "max": false,
+                            "column_name": "MAX",
+                            "database_expression": null
+                        }
+                    }
+                ],
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "created_by_fk": 1,
+                            "table_id": 50,
+                            "d3format": null,
+                            "description": null,
+                            "metric_type": null,
+                            "metric_name": "count",
+                            "changed_on": {
+                                "__datetime__": "2019-07-16T14:05:25"
+                            },
+                            "changed_by_fk": 1,
+                            "expression": "count(*)",
+                            "warning_text": null,
+                            "is_restricted": false,
+                            "verbose_name": null,
+                            "id": 1610,
+                            "created_on": {
+                                "__datetime__": "2019-07-16T14:05:25"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
