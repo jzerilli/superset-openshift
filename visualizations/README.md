@@ -7,7 +7,7 @@ The dashboard should look something like this:
 
 ![Screenshot from 2019-06-05 14-12-37](https://user-images.githubusercontent.com/35980900/58979664-8820a700-879c-11e9-93b7-2679909dd145.png)
 
-The remaining dashboards are intended to demonstrate some potential use cases for Superset.  `cpu_insights.json` visualizes a number of metrics from a CPU dataset. The data used here is for internal use only.
+The remaining dashboards are intended to demonstrate some potential use cases for Superset.  `cpu_insights.json` visualizes a number of metrics from a CPU dataset. The data used here is not for public use unfortunately.
 
 ![Screenshot from 2019-06-24 16-24-32](https://user-images.githubusercontent.com/35980900/61555520-99acce00-aa2d-11e9-9e71-49f2ab1babc7.png)
 
